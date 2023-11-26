@@ -35,7 +35,7 @@ class _NewUserState extends State<NewUser> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("no users"),
+              Text("no custumer"),
 
             ],
           ),
@@ -58,7 +58,7 @@ class _NewUserState extends State<NewUser> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title:Text( "new user"),
+        title:Text( "New Custumer"),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -75,7 +75,7 @@ class _NewUserState extends State<NewUser> {
                     color: Colors.indigo,
                   ),
                   decoration: InputDecoration(
-                    labelText: "Enter username",
+                    labelText: "Enter Custumer Name",
                     border: OutlineInputBorder(
                         borderSide: BorderSide(width: 3),
                       borderRadius: BorderRadius.circular(30),
@@ -91,7 +91,7 @@ class _NewUserState extends State<NewUser> {
                   color: Colors.indigo,
                 ),
                 decoration: InputDecoration(
-                  labelText: "Enter total bill",
+                  labelText: "Enter bill",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(width: 3),
                     borderRadius: BorderRadius.circular(30),
@@ -103,7 +103,7 @@ class _NewUserState extends State<NewUser> {
               SizedBox(height: 30,),
               ElevatedButton.icon(onPressed: (){
                   addUser();
-                }, icon: Icon(Icons.add), label: Text("addUser")),
+                }, icon: Icon(Icons.add), label: Text("Add Custumer")),
               SizedBox(height: 30,),
               ElevatedButton.icon(onPressed: (){
                 if(allUsers.length == 0){
@@ -114,7 +114,7 @@ class _NewUserState extends State<NewUser> {
                   }));
                 }
 
-              }, icon: Icon(Icons.add), label: Text("view all users")),
+              }, icon: Icon(Icons.add), label: Text("View All Custumer")),
 
             ],
         ),

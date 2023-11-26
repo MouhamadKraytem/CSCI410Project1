@@ -29,7 +29,7 @@ class _MainPageState extends State<MainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("no users"),
+              Text("no custuner"),
               ElevatedButton(onPressed: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (c){
                   return NewUser();
@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title:Text("Seelfa") ,
+        title:Text("Custumer Bills Manegmenent") ,
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -77,6 +77,7 @@ class _MainPageState extends State<MainPage> {
                    fontSize: 25,
                  ),
                ),
+               SizedBox(height: 20,),
                ElevatedButton(onPressed: (){
                  if(allUsers.length> 0){
                    Navigator.of(context).push(MaterialPageRoute(builder: (c){
@@ -97,18 +98,18 @@ class _MainPageState extends State<MainPage> {
                  fontSize: 25,
                ),
                ),
-               FloatingActionButton(onPressed: (){
+               SizedBox(height: 20,),
+               ElevatedButton(onPressed: (){
                  Navigator.of(context).push(MaterialPageRoute(builder: (c){
 
                    return NewUser();
                  }));
 
                },child: Icon(Icons.add) ,
+
                ) ,
              ],
-           )
-
-
+           ),
 
          ],
        ),

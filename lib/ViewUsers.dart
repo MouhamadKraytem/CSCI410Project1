@@ -62,9 +62,11 @@ class _ViewUsersState extends State<ViewUsers> {
               children: [
                 SizedBox(height: 10,),
                 Row(children: [
-                  Icon(Icons.paid_outlined ),
+
                   Text(u),
+                  Icon(Icons.paid_outlined ),
                   SizedBox(width: 30,),
+
                   ElevatedButton(onPressed: (){
 
                     delete(allUsers[position]);
